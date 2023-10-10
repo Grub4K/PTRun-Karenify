@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Product>Karenify</Product>
     <Description>Plugin for PowerToys Run to Karenify input and copy it to the clipboard</Description>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1</Version>
     <Copyright>Copyright (c) 2023</Copyright>
     <Authors>Simon Sawicki (Grub4K)</Authors>
 
