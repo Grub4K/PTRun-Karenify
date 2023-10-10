@@ -1,0 +1,14 @@
+{
+	"ID": "5EAAFCA8209044DA80F026B8EFE24FAD",
+	"ActionKeyword": "k?",
+	"Disabled": false,
+	"IsGlobal": false,
+	"Name": "Karenify",
+	"Author": "Simon Sawicki (Grub4K)",
+	"Version": "1.0.0",
+	"Language": "csharp",
+	"Website": "https://github.com/Grub4K/PTRun-Karenify",
+	"ExecuteFileName": "Community.PowerToys.Run.Plugin.Karenify.dll",
+	"IcoPathDark": "res/Karenify.dark.png",
+	"IcoPathLight": "res/Karenify.light.png"
+}

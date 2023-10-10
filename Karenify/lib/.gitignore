@@ -1,0 +1,4 @@
+# You get these from `{PowerToysInstallDir}/...`
+PowerToys.Common.UI.dll
+PowerToys.ManagedCommon.dll
+Wox.Plugin.dll
