@@ -53,19 +53,15 @@ public class Plugin : IPlugin
     private string Karenify(string source, KarenifyOptions options)
     {
         var upper = options.UppercaseFirst;
-        var buffer = new char[source.Length];
+        var buffer = source.ToCharArray();
 
-        for (var i = 0; i < source.Length; i++)
+        for (var i = 0; i < buffer.Length; i++)
         {
-            if (!Char.IsLetter(source[i]))
-            {
-                buffer[i] = source[i];
-            }
-            else
+            if (Char.IsLetter(buffer[i]))
             {
                 buffer[i] = upper
-                    ? Char.ToUpper(source[i])
-                    : Char.ToLower(source[i]);
+                    ? Char.ToUpper(buffer[i])
+                    : Char.ToLower(buffer[i]);
                 upper = !upper;
             }
         }
