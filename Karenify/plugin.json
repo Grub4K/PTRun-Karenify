@@ -5,7 +5,7 @@
 	"IsGlobal": false,
 	"Name": "Karenify",
 	"Author": "Simon Sawicki (Grub4K)",
-	"Version": "1.0.1",
+	"Version": "1.1.0",
 	"Language": "csharp",
 	"Website": "https://github.com/Grub4K/PTRun-Karenify",
 	"ExecuteFileName": "Community.PowerToys.Run.Plugin.Karenify.dll",

@@ -26,7 +26,7 @@ Install:
 ## Building
 
 1. Clone this repository
-2. Copy the following files from `%PROGRAMFILES%\PowerToys\modules\launcher` to the `Karenify/lib/` directory:
+2. The build process takes the reference libraries from `%ProgramFiles%/PowerToys/`. If the install location differs or you want to build against another version, copy the following files to the `Karenify/lib/` directory:
 	- `PowerToys.Common.UI.dll`
 	- `PowerToys.ManagedCommon.dll`
 	- `Wox.Plugin.dll`

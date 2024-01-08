@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Product>Karenify</Product>
     <Description>Plugin for PowerToys Run to Karenify input and copy it to the clipboard</Description>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Copyright>Copyright (c) 2023</Copyright>
     <Authors>Simon Sawicki (Grub4K)</Authors>
 
@@ -18,18 +18,21 @@
     <AssemblyName>Community.PowerToys.Run.Plugin.Karenify</AssemblyName>
   </PropertyGroup>
 
-  <!-- You get these from `{PowerToysInstallDir}/...` -->
+  <!-- If the install location is different, put the libraries into `lib/` -->
   <ItemGroup>
     <Reference Include="PowerToys.Common.UI">
-      <HintPath>/lib/PowerToys.Common.UI.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramFiles)/PowerToys/PowerToys.Common.UI.dll')">$(ProgramFiles)/PowerToys/PowerToys.Common.UI.dll</HintPath>
+      <HintPath Condition="Exists('lib/PowerToys.Common.UI.dll')">lib/PowerToys.Common.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PowerToys.ManagedCommon">
-      <HintPath>lib/PowerToys.ManagedCommon.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramFiles)/PowerToys/PowerToys.ManagedCommon.dll')">$(ProgramFiles)/PowerToys/PowerToys.ManagedCommon.dll</HintPath>
+      <HintPath Condition="Exists('lib/PowerToys.ManagedCommon.dll')">lib/PowerToys.ManagedCommon.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Wox.Plugin">
-      <HintPath>lib/Wox.Plugin.dll</HintPath>
+      <HintPath Condition="Exists('$(ProgramFiles)/PowerToys/Wox.Plugin.dll')">$(ProgramFiles)/PowerToys/Wox.Plugin.dll</HintPath>
+      <HintPath Condition="Exists('lib/Wox.Plugin.dll')">lib/Wox.Plugin.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
