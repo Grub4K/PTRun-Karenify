@@ -6,7 +6,7 @@ ThEn ThIs Is ThE pLuGiN fOr YoU!
 
 ## Requirements
 
-- PowerToys (tested with v0.74.1)
+- PowerToys (tested with v0.76.2)
 
 ## Installation
 

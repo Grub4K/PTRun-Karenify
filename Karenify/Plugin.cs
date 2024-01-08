@@ -8,6 +8,7 @@ public class Plugin : IPlugin
 {
     public string Name => "Karenify";
     public string Description => "Karenify input and copy it to the clipboard";
+    public static string PluginID => "5EAAFCA8209044DA80F026B8EFE24FAD";
 
     private PluginInitContext? _context;
     private string? _iconPath;

@@ -7,7 +7,7 @@
     <Copyright>Copyright (c) 2023</Copyright>
     <Authors>Simon Sawicki (Grub4K)</Authors>
 
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
